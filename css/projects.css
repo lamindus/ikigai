@@ -1,0 +1,39 @@
+.items{
+	position: relative;
+}
+.slick-arrow{
+	width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #ecb84c;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+.slick-next{
+  right: -20px;
+}
+.slick-prev{
+  left: -20px;
+}
+.item{
+		display: flex;
+		margin: 5vh 0;
+}
+.item-img{
+	flex: 1;
+	max-width: 35vw;
+}
+.item-content{
+		flex: 1;
+		max-width: 40vw;
+		margin: auto 0 auto -100px;
+		background-color: aquamarine;
+		padding: 3vh 5vw;
+}
+.item-title{
+	text-align: center;
+}

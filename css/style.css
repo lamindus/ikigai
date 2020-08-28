@@ -1,0 +1,41 @@
+.nav {
+  height: 10vh;
+  display: flex;
+}
+.nav__logo {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__logo--link{
+
+}
+.nav__logo--img{
+  height: 8vh;
+  width: auto;
+}
+.nav__menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 2vw 0 13vw;
+}
+.nav__menu-item {
+}
+.copyright{
+	text-align: center;
+}
+.slider{
+	position: relative;
+}
+.slider__text{
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #fff;
+	width: 600px;
+	padding: 20px;
+}
