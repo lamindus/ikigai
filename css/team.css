@@ -1,0 +1,29 @@
+.person{
+    display: flex;
+    margin: 8vh 0;
+}
+.person:nth-child(even) .person-about{
+    margin-right: -50px;
+    z-index: 10;
+}
+.person-photo{
+    flex: 1;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.person-about{
+    flex: 1;
+    margin: auto;
+    padding: 0 50px 50px;
+    background-color: #0a0;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: azure;
+    font-size: 20px;
+    margin-left: -50px;
+}
+.person-name{
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0 20px;
+}

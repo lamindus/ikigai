@@ -1,67 +1,90 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IKIGAI - your choice</title>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/slick.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
   </head>
   <body>
     <header class="header">
       <nav class="nav container">
-				<div class="nav__logo" >
-					<a href="index.html" class="nav__logo--link">
-						<img class="nav__logo--img" src="img/logo.png" alt="">
-					</a>
-				</div>
+        <div class="nav__logo">
+          <a href="index.html" class="nav__logo--link">
+            <img class="nav__logo--img" src="img/logo.png" alt="" />
+          </a>
+        </div>
         <ul class="nav__menu">
           <li class="nav__menu-item"><a href="projects.html">Проекти</a></li>
           <li class="nav__menu-item"><a href="team.html">Команда</a></li>
           <li class="nav__menu-item"><a href="about-us.html">Про нас</a></li>
           <li class="nav__menu-item"><a href="contacts.html">Контакти</a></li>
         </ul>
-			</nav>
-  	</header>
+      </nav>
+    </header>
     <main class="main">
-			<section class="items container">
-				<div class="item">
-					<img class="item-img" src="img/individual.png" alt="">
-					<div class="item-content">
-						<h2 class="item-title">Індивідуальні заняття</h2>
-						<p class="item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero deleniti aliquid placeat corporis. Nesciunt temporibus expedita, beatae excepturi quaerat totam perferendis numquam neque fuga maiores laborum voluptatem, molestias odio minima!</p>
-					</div>
-				</div>
-				<div class="item">
-					<img class="item-img" src="img/psychologist.png" alt="">
-					<div class="item-content">
-						<h2 class="item-title">Заняття з психології</h2>
-						<p class="item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero deleniti aliquid placeat corporis. Nesciunt temporibus expedita, beatae excepturi quaerat totam perferendis numquam neque fuga maiores laborum voluptatem, molestias odio minima!</p>
-					</div>
-				</div>
-				<div class="item">
-					<img class="item-img" src="img/Art Therapy.jpg" alt="">
-					<div class="item-content">
-						<h2 class="item-title">Арт-терапія</h2>
-						<p class="item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero deleniti aliquid placeat corporis. Nesciunt temporibus expedita, beatae excepturi quaerat totam perferendis numquam neque fuga maiores laborum voluptatem, molestias odio minima!</p>
-					</div>
-				</div>
-				<div class="item">
-					<img class="item-img" src="img/Kids Music Event.png" alt="">
-					<div class="item-content">
-						<h2 class="item-title">Музичне свято</h2>
-						<p class="item-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero deleniti aliquid placeat corporis. Nesciunt temporibus expedita, beatae excepturi quaerat totam perferendis numquam neque fuga maiores laborum voluptatem, molestias odio minima!</p>
-					</div>
-				</div>
-			</section>
+      <section class="items container">
+        <button class="prev-btn" onclick="prev(projects);">
+          <img class="btn__img" src="img/prev.svg" alt="" />
+        </button>
+        <button class="next-btn" onclick="next(projects);">
+          <img class="btn__img" src="img/next.svg" alt="" />
+        </button>
+        <div class="item active-item">
+          <img class="item-img" src="img/individual.jpg" alt="" />
+          <div class="item-content">
+            <h2 class="item-title">Індивідуальні заняття</h2>
+            <p class="item-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+              deleniti aliquid placeat corporis. Nesciunt temporibus expedita,
+              beatae excepturi quaerat totam perferendis numquam neque fuga
+              maiores laborum voluptatem, molestias odio minima!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item-img" src="img/psychologist.jpg" alt="" />
+          <div class="item-content">
+            <h2 class="item-title">Заняття з психології</h2>
+            <p class="item-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+              deleniti aliquid placeat corporis. Nesciunt temporibus expedita,
+              beatae excepturi quaerat totam perferendis numquam neque fuga
+              maiores laborum voluptatem, molestias odio minima!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item-img" src="img/Art Therapy.jpg" alt="" />
+          <div class="item-content">
+            <h2 class="item-title">Арт-терапія</h2>
+            <p class="item-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+              deleniti aliquid placeat corporis. Nesciunt temporibus expedita,
+              beatae excepturi quaerat totam perferendis numquam neque fuga
+              maiores laborum voluptatem, molestias odio minima!
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <img class="item-img" src="img/Kids Music Event.jpg" alt="" />
+          <div class="item-content">
+            <h2 class="item-title">Музичне свято</h2>
+            <p class="item-text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+              deleniti aliquid placeat corporis. Nesciunt temporibus expedita,
+              beatae excepturi quaerat totam perferendis numquam neque fuga
+              maiores laborum voluptatem, molestias odio minima!
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <p class="copyright">&copy; IKIGAI 2020. All rights reserved.</p>
-		</footer>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/main.js"></script>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
